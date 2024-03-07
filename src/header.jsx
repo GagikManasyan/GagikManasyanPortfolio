@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./css/header.css";
@@ -6,20 +7,32 @@ function Header() {
   return (
     <header>
       <nav>
-        <ul>
+        <ul id="web-nav">
           <li>
-            <a href="https://github.com/GagikManasyan">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
+            <Link to="/">home</Link>
           </li>
           <li>
-            <a href="https://linkedin.com/in/gagik-manasyan">
+            <Link to="/about">about</Link>
+          </li>
+          <li>
+            <Link to="/projects">projects</Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="https://github.com/GagikManasyan">
+              <FontAwesomeIcon icon={faGithub} />
+            </Link>
+          </li>
+          <li>
+            <Link to="https://linkedin.com/in/gagik-manasyan">
               <FontAwesomeIcon icon={faLinkedin} />
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 }
+
 export default Header;

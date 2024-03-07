@@ -1,11 +1,20 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import prjImages from "./assets/images.js";
-import "./css/home.css";
+import prjImages from "../assets/images.js";
+import "../css/home.css";
 
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  useEffect(() => {
+    const preloadImages = () => {
+      prjImages.forEach((image) => {
+        const img = new Image();
+        img.src = `/images/foods-slider/${image}`;
+      });
+    };
+    preloadImages();
+  }, []);
   const slideLeft = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? prjImages.length - 1 : prevSlide - 1
@@ -16,15 +25,7 @@ function Home() {
       prevSlide === prjImages.length - 1 ? 0 : prevSlide + 1
     );
   };
-  useEffect(() => {
-    const preloadImages = () => {
-      prjImages.forEach((image) => {
-        const img = new Image();
-        img.src = `/images/foods-slider/${image}`;
-      });
-    };
-    preloadImages();
-  }, []);
+
   return (
     <div id="home">
       <button

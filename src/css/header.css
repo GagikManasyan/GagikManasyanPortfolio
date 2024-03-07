@@ -7,13 +7,15 @@ header {
   animation: slide-in 1s forwards;
   z-index: 1;
 }
-header a {
+header a,
+li {
+  font-family: "Raleway";
   color: white;
   text-decoration: none;
 }
 header nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 header ul {
@@ -26,6 +28,19 @@ header ul li {
 }
 header ul svg {
   font-size: 30px;
+}
+#web-nav a::after {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background: #ffff;
+  transition: width 0.55s ease;
+}
+#web-nav a:hover::after {
+  width: 100%;
 }
 
 @keyframes slide-in {

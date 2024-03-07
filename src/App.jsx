@@ -1,7 +1,8 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./header.jsx";
-import Home from "./home.jsx";
-import About from "./about.jsx";
-import Projects from "./projects.jsx";
+import Home from "./routes/home.jsx";
+import About from "./routes/about.jsx";
+import Projects from "./routes/projects.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./css/reset.css";
@@ -26,13 +27,17 @@ function Contacts() {
 }
 function App() {
   return (
-    <div id="app">
-      <Header />
-      <Home />
-      <About />
-      <Projects />
-      <Contacts />
-    </div>
+    <Router>
+      <div id="app">
+        <Header />
+        <Routes>
+          <Route key="home" path="/" element={<Home />} />
+          <Route key="about" path="/about" element={<About />} />
+          <Route key="projects" path="/projects" element={<Projects />} />
+        </Routes>
+        <Contacts />
+      </div>
+    </Router>
   );
 }
 
