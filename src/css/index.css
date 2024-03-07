@@ -1,5 +1,5 @@
 @media screen and (max-width: 1180px) {
-  #home button {
+  #slides-wrapper button {
     font-size: 2.5rem;
   }
   .img-container span {
@@ -25,26 +25,31 @@
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 860px) {
+  #hello h1 {
+    font-size: 70px;
+  }
+  #hello span:nth-child(3) {
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 590px) {
-  h1,
+  #hello h1 {
+    font-size: 60px;
+  }
   h2 {
     font-size: 1.5rem;
   }
-  .img-container span {
-    height: 30px;
-    font-size: 10px;
+  #scroll-down {
+    visibility: hidden;
+  }
+  #home-wrapper {
+    display: none;
   }
   #home button {
     font-size: 1.5rem;
   }
-  #slides-left {
-    top: 50%;
-    left: 10px;
-  }
-  #slides-right {
-    top: 50%;
-    right: 10px;
-  }
+
   #about {
     padding: 5rem 2rem 0rem;
   }

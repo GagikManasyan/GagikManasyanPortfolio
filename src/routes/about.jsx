@@ -12,7 +12,7 @@ function About() {
   return (
     <div id="about">
       <div id="about-info">
-        <h1>about me.</h1>
+        <h3>about me.</h3>
         <p>
           I am a rising starter in front-end development. I like crafting solid
           and scalable web pages with great user experiences. When doing my work

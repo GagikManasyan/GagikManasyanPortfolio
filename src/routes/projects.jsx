@@ -5,7 +5,7 @@ import "../css/projects.css";
 function Projects() {
   return (
     <div id="projects">
-      <h2>projects</h2>
+      <h4>projects</h4>
       <div id="projects-container">
         {projects.map((project, index) => {
           return (

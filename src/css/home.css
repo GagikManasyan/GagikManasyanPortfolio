@@ -1,15 +1,39 @@
 #home {
   position: relative;
   display: flex;
+  flex-direction: column;
   padding-top: 5rem;
   overflow-x: hidden;
   opacity: 0;
   animation: fadeIn 0.75s ease-in forwards;
 }
-#home button {
-  position: absolute;
+#hello {
+  height: 90vh;
+  margin-top: 5rem;
+  margin-left: 10vw;
 }
-#home button {
+#hello h1 {
+  font-size: 120px;
+}
+#hello span {
+  display: block;
+  font-family: "Raleway";
+}
+#hello span:nth-child(1) {
+  color: #c78c00;
+}
+#hello span:nth-child(3) {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+#slides-wrapper {
+  position: relative;
+}
+#slides-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#slides-wrapper button {
   position: absolute;
   font-size: 4.5rem;
   color: #1f1f1f;
@@ -34,7 +58,6 @@
 .img-container {
   padding: 0vw 10vw;
   pointer-events: none;
-  position: relative;
 }
 .img-container img {
   filter: grayscale(0.65);
