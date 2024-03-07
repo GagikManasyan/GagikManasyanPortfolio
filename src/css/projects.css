@@ -1,0 +1,19 @@
+#projects {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+#projects h2 {
+  text-align: center;
+  animation: slideInX 1s ease-in-out;
+}
+#projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  grid-gap: 40px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  animation: slideInX 1s ease-in-out 0.85s forwards;
+  opacity: 0;
+}

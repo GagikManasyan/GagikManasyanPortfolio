@@ -1,0 +1,64 @@
+@media screen and (max-width: 1180px) {
+  #home button {
+    font-size: 2.5rem;
+  }
+  .img-container span {
+    height: 60px;
+  }
+  #about {
+    padding: 5rem 5rem 0rem;
+  }
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  #about-info p {
+    font-size: 15px;
+  }
+  .skill {
+    margin-right: 1.5rem;
+    min-width: 80px;
+    min-height: 125px;
+    font-size: 1.5rem;
+  }
+  #projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 590px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+  .img-container span {
+    height: 30px;
+    font-size: 10px;
+  }
+  #home button {
+    font-size: 1.5rem;
+  }
+  #slides-left {
+    top: 50%;
+    left: 10px;
+  }
+  #slides-right {
+    top: 50%;
+    right: 10px;
+  }
+  #about {
+    padding: 5rem 2rem 0rem;
+  }
+  #about p {
+    font-size: 10px;
+  }
+  .skill {
+    margin-right: 0.5rem;
+    min-width: 60px;
+    min-height: 95px;
+    font-size: 1.5rem;
+  }
+  .project {
+    width: 15rem;
+    height: 10rem;
+  }
+}

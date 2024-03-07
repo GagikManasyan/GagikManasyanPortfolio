@@ -1,0 +1,38 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background: #1f1f1f;
+  animation: slide-in 1s forwards;
+  z-index: 1;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  margin: 0px 30px;
+}
+header ul li {
+  position: relative;
+  margin: 10px;
+}
+header ul svg {
+  font-size: 30px;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

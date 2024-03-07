@@ -1,0 +1,30 @@
+.project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 13rem;
+  border-radius: 15px;
+  background: #1f1f1f;
+  box-shadow: 1px 1px 20px 10px #a7a7a7;
+}
+.project:hover {
+  transform: translateY(-50px);
+  transition: transform 0.3s ease;
+}
+.project img {
+  width: 40%;
+}
+.links {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1.15rem;
+}
+.links a {
+  padding: 5px;
+  font-family: "Raleway";
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+}

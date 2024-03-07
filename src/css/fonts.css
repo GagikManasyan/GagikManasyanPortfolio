@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-VariableFont_wght.ttf") format("woff2"),
+    url("/fonts/Orbitron-VariableFont_wght.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("woff2"),
+    url("/fonts/Raleway-VariableFont_wght.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
