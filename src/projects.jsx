@@ -7,7 +7,7 @@ import "./css/projects.css";
 function Projects() {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.9,
+    threshold: 1,
   });
   const [active, setActive] = useState(false);
 
